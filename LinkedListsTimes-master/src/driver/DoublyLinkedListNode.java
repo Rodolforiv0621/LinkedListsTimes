@@ -18,4 +18,7 @@ public class DoublyLinkedListNode {
     public void setPrevious(DoublyLinkedListNode previous){
         this.previous = previous;
     }
+    public DoublyLinkedListNode getNext(){
+        return this.next;
+    }
 }
