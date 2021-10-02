@@ -39,19 +39,19 @@ public class Driver {
         System.out.printf("%10d %9d %8d %11d\n", circularDoublyInsertionTime0, circularDoublyInsertionTime1, circularDoublyInsertionTime2, circularDoublyInsertionTime3);
         //----------------------------------------------------------------------------------------------------------------------------------------------
         System.out.println("\nDeletion");
-        System.out.printf("%28d %9d %8d %11d", 100, 1000, 10000, 100000);
+        System.out.printf("%28d %9d %10d %11d", 100, 1000, 10000, 100000);
         System.out.print("\nSinglyLinkedList: "); 
         final long singlyDeletionTime0 = singlyLinkedListDeletionTime(100);
         final long singlyDeletionTime1 = singlyLinkedListDeletionTime(1000);
         final long singlyDeletionTime2 = singlyLinkedListDeletionTime(10000);        
         final long singlyDeletionTime3 = singlyLinkedListDeletionTime(100000);
-        System.out.printf("%11d %9d %9d %11d\n", singlyDeletionTime0, singlyDeletionTime1, singlyDeletionTime2, singlyDeletionTime3);
+        System.out.printf("%11d %9d %10d %11d\n", singlyDeletionTime0, singlyDeletionTime1, singlyDeletionTime2, singlyDeletionTime3);
         System.out.print("DoublyLinkedList: ");     
         final long doublyDeletionTime0 = doublyLinkedListDeletionTime(100);
         final long doublyDeletionTime1 = doublyLinkedListDeletionTime(1000);
         final long doublyDeletionTime2 = doublyLinkedListDeletionTime(10000);
         final long doublyDeletionTime3 = doublyLinkedListDeletionTime(100000);
-        System.out.printf("%12d %9d %8d %11d\n", doublyDeletionTime0, doublyDeletionTime1, doublyDeletionTime2, doublyDeletionTime3);
+        System.out.printf("%12d %9d %9d %11d\n", doublyDeletionTime0, doublyDeletionTime1, doublyDeletionTime2, doublyDeletionTime3);
         System.out.print("CircularSinglyList: ");
         final long circularSinglyDeletionTime0 = circularSinglyDeletionTime(100);
         final long circularSinglyDeletionTime1 = circularSinglyDeletionTime(1000);
@@ -63,7 +63,7 @@ public class Driver {
         final long circularDoublyDeletionTime1 = circularDoublyDeletionTime(1000);
         final long circularDoublyDeletionTime2 = circularDoublyDeletionTime(10000);
         final long circularDoublyDeletionTime3 = circularDoublyDeletionTime(100000);
-        System.out.printf("%10d %9d %8d %11d\n", circularDoublyDeletionTime0, circularDoublyDeletionTime1, circularDoublyDeletionTime2, circularDoublyDeletionTime3);
+        System.out.printf("%10d %9d %9d %11d\n", circularDoublyDeletionTime0, circularDoublyDeletionTime1, circularDoublyDeletionTime2, circularDoublyDeletionTime3);
         
         
     }
