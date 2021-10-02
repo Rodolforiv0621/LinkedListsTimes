@@ -42,6 +42,8 @@ public class DoublyLinkedList {
             return;
         }
         if(size == 1){
+            head = null;
+            size--;
             return;
         }else{
         temp.getNext().setPrevious(null);
