@@ -1,6 +1,7 @@
 // Rodolfo Rivera
 //Project 1 Data Structure Timing
 // 9/5/2021
+//This project shows the timing for insertion and deletion methods on singly, doubly, circular singly, and doubly singly linked lists at the nth postion.
 package driver;
 
 public class Driver {
@@ -10,7 +11,7 @@ public class Driver {
     private static CircularDoublyLinkedList circularDoublyList = new CircularDoublyLinkedList();
     
     public static void main(String[] args) {
-         //System.out.println("This program shows time in nanoseconds, the amount of time insertion and deletion functions take on different types of linked lists");
+      
         System.out.println("Insertion");
         System.out.printf("%28d %9d %9d %11d", 100, 1000, 10000, 100000);
         System.out.print("\nSinglyLinkedList: ");
@@ -37,7 +38,6 @@ public class Driver {
         final long circularDoublyInsertionTime2 = circularDoublyInsertionTime(10000);
         final long circularDoublyInsertionTime3 = circularDoublyInsertionTime(100000);     
         System.out.printf("%10d %9d %8d %11d\n", circularDoublyInsertionTime0, circularDoublyInsertionTime1, circularDoublyInsertionTime2, circularDoublyInsertionTime3);
-        //----------------------------------------------------------------------------------------------------------------------------------------------
         System.out.println("\nDeletion");
         System.out.printf("%28d %9d %10d %11d", 100, 1000, 10000, 100000);
         System.out.print("\nSinglyLinkedList: "); 
