@@ -4,10 +4,6 @@ public class DoublyLinkedList {
     private DoublyLinkedListNode head = null;
     private int size = 0;
     
-//    public DoublyLinkedList(){
-//        head = null;
-//        size = 0;
-//    }
     public void insertEnd(String data){
         DoublyLinkedListNode node = new DoublyLinkedListNode(data);
         if(head == null){
@@ -24,6 +20,21 @@ public class DoublyLinkedList {
         }
         
         
+    }
+    public int find(String data){
+        DoublyLinkedListNode temp = head;
+        int index = 0;
+        if(temp == null){
+            return -1;
+        }
+        while(temp != null){
+            if(temp.getData() == data){
+                return index;
+            }
+            temp = temp.getNext();
+            index++;
+        }
+        return -1;
     }
     public void delete(){
         DoublyLinkedListNode temp = head;

@@ -31,6 +31,21 @@ public class SinglyLinkedList {
         }
         System.out.println();
     }
+    public int find(String data){
+        SinglyLinkedListNode temp = head;
+        int index = 0;
+        if(temp == null){
+            return -1;
+        }
+        while(temp != null){
+            if(temp.getData() == data){
+                return index;
+            }
+            temp = temp.getNext();
+            index++;
+        }
+        return -1;
+    }
     public void setHead(SinglyLinkedListNode n){
         this.head = n;
     }
